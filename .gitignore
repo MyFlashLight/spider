@@ -62,7 +62,7 @@ typings/
 
 .idea
 .vscode
+.history
 dist/
 build/
 chromium/
-.history/
