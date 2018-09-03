@@ -1,6 +1,6 @@
-import config from '../../config'
 import crypto from 'crypto'
 import padStart from 'lodash/padStart'
+import config from '../../config'
 
 const secret = config.secret
 
@@ -18,9 +18,10 @@ let base34Hash = (n) => {
     quotient = Math.floor(quotient / 34)
     res = baseArr[mod] + res
   }
-  return padStart(res, 6 , '0')
+  return padStart(res, 6, '0')
 }
 
-export { sha256Hash, base34Hash }
-
-
+export {
+  sha256Hash,
+  base34Hash
+}
